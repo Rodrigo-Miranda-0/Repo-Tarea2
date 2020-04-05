@@ -68,5 +68,9 @@ public class Usuario {
         this.setCantidadHijos(cantHijos);
         this.setSaldo(0);
     }
+        @Override
+    public boolean equals(Object obj){
+        return this.getCedula().equalsIgnoreCase(((Usuario)obj).getCedula());
+    }
 }
 
