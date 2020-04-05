@@ -28,4 +28,8 @@ public class FuncionesUsuario {
         impuesto = impuesto*(descuentoHijos/100);
         return impuesto;
     }
+        public void CobroDeSueldo(Usuario u, int cantidadCobrar){
+        int saldoActual = u.getSaldo();
+        u.setSaldo(cantidadCobrar+saldoActual);
+    }
 }
